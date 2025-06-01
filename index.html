@@ -9,24 +9,30 @@
     </head>
     <body>
         <div class="container">
-            <div class="inputs">
-                <input type="text" placeholder="Enter city name" id="city-name">
-                <button id="search" onclick="fetchWeatherData()"><img src="./images/search.png" class="search-img"></button>
+            <div class="weather">
+                <div class="inputs">
+                    <input type="text" placeholder="Enter city name" id="city-name">
+                    <button id="search" onclick="fetchWeatherData()"><img src="./images/search.png" class="search-img"></button>
+                </div>
+                <div class="weather-icon">
+                    <img src="./images/cloudy.png" id="weather-icon">
+                </div>
+                <div class="temperature">
+                    <h1 id="temperature">26°C</h1>
+                </div>
+                <div class="city">
+                    <h2 id="city">Bonn</h2>
+                </div>
+                <div class="weather-info">
+                    <img src="./images/wind.png" id="wind-img"><span id="wind">Wind speed: 15kts</span>
+                    <img src="./images/raindrop.png" id="humidity-img"><span id="humidity">Humidity: 50%</span>
+                </div>
+                    <div class="error-message">
+                        <h1>Could not find city</h1>
+                    </div>
+                </div>
+
             </div>
-            <div class="weather-icon">
-                <img src="./images/cloudy.png" id="weather-icon">
-            </div>
-            <div class="temperature">
-                <h1 id="temperature">26°C</h1>
-            </div>
-            <div class="city">
-                <h2 id="city">Bonn</h2>
-            </div>
-            <div class="weather-info">
-                <img src="./images/wind.png" id="wind-img"><span id="wind">Wind speed: 15kts</span>
-                <img src="./images/raindrop.png" id="humidity-img"><span id="humidity">Humidity: 50%</span>
-            </div>
-        </div>
     </body>
     <script src="scripts.js"></script>
 </html>

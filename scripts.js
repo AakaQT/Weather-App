@@ -8,6 +8,7 @@ async function fetchWeatherData(){
         const weatherIcon = document.getElementById("weather-icon");
         const city = document.getElementById("city");
 
+
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`)
 
         if(!response.ok){
