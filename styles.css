@@ -74,3 +74,9 @@ input{
 .error-message{
     display: none;
 }
+
+.temperature{
+    display: flex;
+    justify-content: space-between;
+
+}

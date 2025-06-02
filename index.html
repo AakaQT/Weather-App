@@ -9,16 +9,22 @@
     </head>
     <body>
         <div class="container">
-            <div class="weather">
-                <div class="inputs">
+            <div class="inputs">
                     <input type="text" placeholder="Enter city name" id="city-name">
                     <button id="search" onclick="fetchWeatherData()"><img src="./images/search.png" class="search-img"></button>
                 </div>
+            <div class="weather">
+                
                 <div class="weather-icon">
                     <img src="./images/cloudy.png" id="weather-icon">
                 </div>
                 <div class="temperature">
+                    <p id="feels-like"></p>
                     <h1 id="temperature"></h1>
+                    <div class="high-low-temp">
+                        <p id="high-temp"></p>
+                        <p id="low-temp"></p>
+                    </div>
                 </div>
                 <div class="city">
                     <h2 id="city"></h2>
