@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <div class="inputs">
-                    <input type="text" placeholder="Enter city name" id="city-name">
+                    <input type="text" placeholder="Enter city name" id="city-name" oninput="this.value = this.value.replace(/[0-9]/g, '')" >
                     <button id="search" onclick="fetchWeatherData()"><img src="./images/search.png" class="search-img"></button>
                 </div>
             <div class="weather">
